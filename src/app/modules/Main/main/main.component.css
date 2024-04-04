@@ -1,0 +1,54 @@
+
+.Square{
+  width: 30px;
+  padding: 20px;
+  background-color: rgb(215, 220, 248) !important;
+  border-radius: 5px;
+}
+  .circleone{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid;
+    color: blue;
+    padding-top: 4px  ;
+    background-color: aliceblue;
+    top: 0px;
+    right: 70px;
+  }
+  .circleTow{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid;
+    color: blue;
+    padding-top: 4px  ;
+    background-color: aliceblue;
+    top: 0px;
+    right: 101px;
+  }
+  .Square2{
+    width: 40px;
+    height: 40px;
+    
+  
+  background-color: rgb(215, 220, 248) !important;
+  border-radius: 5px;
+  }
+  .control{
+    gap: 20px !important;
+  }
+  .controlgab{
+    gap: 3px !important;
+  }
+  .icons{
+    cursor: pointer !important;;
+  }
+  .btnALL{
+    background-color: rgb(238, 240, 240);
+
+  }
+
+  

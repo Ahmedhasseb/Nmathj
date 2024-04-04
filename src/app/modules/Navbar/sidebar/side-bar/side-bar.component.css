@@ -1,14 +1,14 @@
-.side{
-    width: 15% !important;
-    height: auto !important;
-   height: 50% vh !important;
-}
-.side li:hover{
-color: rgb(156, 156, 248) !important;
 
-}
-.side li a:hover{
-    color: rgb(156, 156, 248) !important;
-    cursor: pointer !important;;
-    
+
+
+  .search{
+       bottom: 17px;
+        right: 7px;
     }
+    .circle{
+        width: 40px !important;
+        height: 45px !important;
+        
+    }
+   
+   

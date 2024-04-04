@@ -1,3 +1,18 @@
-<app-side-bar></app-side-bar>
+<!-- <div class="position-relative">
+    <app-side-bar></app-side-bar>
 
-<router-outlet></router-outlet>
+
+    <router-outlet class="content"></router-outlet>
+</div> -->
+
+<app-side-bar></app-side-bar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <app-side class="col-md-12"></app-side>
+    </div>
+    <div class="col-md-9">
+      <router-outlet class="col-md-12 container-"></router-outlet>
+    </div>
+  </div>
+</div>

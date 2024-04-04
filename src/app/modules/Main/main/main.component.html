@@ -1,0 +1,140 @@
+<div class="container mt-3  ">
+  <h3>لوحة التحكم</h3>
+  <div class="control d-flex ">
+    <div class="col-md-3 col-sm-6 bg-body rounded p-4">
+      <div class="d-flex justify-content-evenly p-1">
+        <div class="progress-bar">
+          <i class="fa-solid fa-arrow-up-right-dots fs-4"></i>
+        </div>
+        <div class="text-center">
+          <h5 class="m-0 text-muted">النماذج</h5>
+          <h6 class="m-0 fw-bold">4</h6>
+          <span class="text-muted">مارس 2024</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 bg-body rounded p-3">
+      <div class="d-flex justify-content-evenly">
+        <div class="progress-bar">
+          <i class="fa-solid fa-arrow-up-right-dots fs-4"></i>
+        </div>
+        <div class="text-center">
+          <h5 class="m-0 text-muted">اجمالي النتائج</h5>
+          <h6 class="m-0 fw-bold">3.6k</h6>
+          <span class="text-muted">شهر/مارس 2024</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 bg-body rounded p-4">
+      <div class="d-flex justify-content-evenly p-1">
+        <div class="progress-bar">
+          <i class="fa-solid fa-arrow-up-right-dots fs-4"></i>
+        </div>
+        <div class="text-center">
+          <h5 class="m-0 text-muted">اجمالي النتائج</h5>
+          <h6 class="m-0 fw-bold">3.6k</h6>
+          <span class="text-muted">شهر/مارس 2024</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 bg-body rounded p-4">
+      <div class="d-flex justify-content-evenly p-1">
+        <div class="progress-bar">
+          <i class="fa-solid fa-arrow-up-right-dots fs-4"></i>
+        </div>
+        <div class="text-center">
+          <h5 class="m-0 text-muted">اجمالي النتائج</h5>
+          <h6 class="m-0 fw-bold">3.6k</h6>
+          <span class="text-muted">شهر/مارس 2024</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5 pb-4 bg-body ms-4 ">
+ 
+  
+ <div class="pt-3">
+  <div class="d-flex p- mt-3 justify-content-between ps-2 pe-2">
+    <div class="">
+      <div>
+        <h5>اخر النماذج</h5>
+      </div>
+    </div>
+    <div class="icons d-flex p-2  text-center">
+      <div class="ms-2">
+        <button class="btnALL text-dark border-0 btn btn-secondary ps-2 pe-2 ">عرض الكل</button>
+      </div>
+      <div class="ms-2 p-1">
+        <i class="fa-solid fa-sliders fs-5"></i>
+      </div>
+      <div class="ms-2 p-1"><i class="fa-solid fa-bars-progress fs-5" (click)="showTable()"></i></div>
+      <div class="ms-2 p-1"><i class="fas fa-th-large fs-5" (click)="hidden()"></i></div>
+    </div>
+  </div>
+ </div>
+  
+
+    <table class="table table-striped col-md-10  " id="table">
+      <thead >
+        <tr >
+          
+          <th class="text-center col-3">عنوان النموذج</th>
+          <th class=" col-3 text-center" >المالك</th>
+          <th class=" col-3 text-center" >التصنيف</th>
+          <th class=" col-3">...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of table">
+          <td>
+            <div class="d-flex m-0 p-0">
+              <div class="Square "></div>
+              <span class="me-1 mt-1 text-center">{{item.Name}}</span>
+            </div>
+          </td>
+          <td class="text-center ">
+            <div class="position-relative bg-info pos">
+              <div class="circleone position-absolute fw-bold ">MA</div>
+              <div class="circleTow position-absolute fw-bold">PP</div>
+
+          </div>
+        </td>
+          <td class="text-center">
+            <div>
+              <button class="btn btn-danger border-0 ps-2 pe-2 p-0 bg-info">{{item.Category}}</button>
+            </div>
+          </td>
+          <td></td>
+          
+        </tr>
+      </tbody>
+    </table>
+  <div class="d-flex flex-wrap ">
+    <div class="controlgab col-md-3 bg-light rounded pt-3 ps-3 pe-3 d-none "  name="iconsTest" *ngFor="let item of table">
+      <div class="d-flex" >
+        <div class="Square2 p-3 bg-danger">
+  
+        </div>
+        <div class="me-1  "> 
+          <h6 class="m-0  " >{{item.Name}}</h6>
+          <p class="m-0">{{item.date}}</p>
+          <span class="m-0 btn btn-info pt-0 pb-0 ps-2 pe-2">{{item.Category}}</span>
+          
+        </div>
+      </div>
+      <div class="d-flex align-items-end justify-content-between mt-3 p-0">
+        <div><p class="m-0 p-0">{{item.result}}</p>
+          <p class="m-0 p-0">النتيجة</p>
+        </div>
+        <div><p>المزيد....</p></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+   
+

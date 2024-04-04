@@ -2,4 +2,5 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 body{
     direction: rtl;
+    background-color: rgb(149, 150, 151);
 }

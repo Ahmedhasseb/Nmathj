@@ -1,0 +1,17 @@
+.side{
+ 
+    height: auto !important;
+   height: 80vh !important;
+   border-left: 1px solid ;
+   transition: all;
+}
+
+.cc :hover{
+       
+    background-color: rgb(239, 239, 248)   !important;
+    color: blue;
+    border-radius: 10px;
+   
+    transition: 1s;
+    cursor: pointer !important;;
+}
