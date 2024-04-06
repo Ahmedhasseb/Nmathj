@@ -20,7 +20,20 @@ export class MainComponent {
   ]
   
 
-
+getBadgeClass(status:any):object{
+switch(status){
+case("المالية"):
+return{'Money btn btn-danger border-0 ps-2 pe-2 p-0':true}
+case("الموارد البشرية"):
+return{'HR btn btn-danger border-0 ps-2 pe-2 p-0':true}
+case("التسويق"):
+return{'shoping btn btn-danger border-0 ps-2 pe-2 p-0':true}
+case("التواصل الاجتماعي"):
+return{'Concent btn btn-danger border-0 ps-2 pe-2 p-0':true}
+default:
+return{}
+}
+}
 
 
 

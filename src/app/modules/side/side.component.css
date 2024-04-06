@@ -1,8 +1,10 @@
+
+
 .side{
- 
+
     height: auto !important;
    height: 80vh !important;
-   border-left: 1px solid ;
+   border-left: 1px solid #d3d2d2 ;
    transition: all;
 }
 
@@ -14,4 +16,10 @@
    
     transition: 1s;
     cursor: pointer !important;;
+}
+.image{
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(207, 207, 207);
 }

@@ -37,8 +37,9 @@
   background-color: rgb(215, 220, 248) !important;
   border-radius: 5px;
   }
+  
   .control{
-    gap: 20px !important;
+    gap: 5px !important;
   }
   .controlgab{
     gap: 3px !important;
@@ -49,6 +50,20 @@
   .btnALL{
     background-color: rgb(238, 240, 240);
 
+  }
+
+  .Money{
+    background-color: #EFF2FF;
+
+  }
+  .shoping{
+background-color: #FFF4E4;
+  }
+  .HR{
+background-color: #FCECFF;
+  }
+  .Concent{
+background-color: #FFE4E4;
   }
 
   

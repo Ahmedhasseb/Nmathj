@@ -1,6 +1,6 @@
-<div class="container mt-3  ">
+<div class="mt-3">
   <h3>لوحة التحكم</h3>
-  <div class="control d-flex ">
+  <div class="control d-flex flex-sm-column flex-md-row">
     <div class="col-md-3 col-sm-6 bg-body rounded p-4">
       <div class="d-flex justify-content-evenly p-1">
         <div class="progress-bar">
@@ -8,7 +8,7 @@
         </div>
         <div class="text-center">
           <h5 class="m-0 text-muted">النماذج</h5>
-          <h6 class="m-0 fw-bold">4</h6>
+          <h6 class="m-0 fw-bold text-start">4</h6>
           <span class="text-muted">مارس 2024</span>
         </div>
       </div>
@@ -20,7 +20,7 @@
         </div>
         <div class="text-center">
           <h5 class="m-0 text-muted">اجمالي النتائج</h5>
-          <h6 class="m-0 fw-bold">3.6k</h6>
+          <h6 class="m-0 fw-bold text-start">3.6k</h6>
           <span class="text-muted">شهر/مارس 2024</span>
         </div>
       </div>
@@ -32,7 +32,7 @@
         </div>
         <div class="text-center">
           <h5 class="m-0 text-muted">اجمالي النتائج</h5>
-          <h6 class="m-0 fw-bold">3.6k</h6>
+          <h6 class="m-0 fw-bold text-start">3.6k</h6>
           <span class="text-muted">شهر/مارس 2024</span>
         </div>
       </div>
@@ -40,11 +40,11 @@
     <div class="col-md-3 col-sm-6 bg-body rounded p-4">
       <div class="d-flex justify-content-evenly p-1">
         <div class="progress-bar">
-          <i class="fa-solid fa-arrow-up-right-dots fs-4"></i>
+     
         </div>
         <div class="text-center">
           <h5 class="m-0 text-muted">اجمالي النتائج</h5>
-          <h6 class="m-0 fw-bold">3.6k</h6>
+          <h6 class="m-0 fw-bold text-start">3.6k</h6>
           <span class="text-muted">شهر/مارس 2024</span>
         </div>
       </div>
@@ -52,11 +52,11 @@
   </div>
 </div>
 
-<div class="container mt-5 pb-4 bg-body ms-4 ">
+<div class=" mt-3 pb-3 bg-body rounded">
  
   
- <div class="pt-3">
-  <div class="d-flex p- mt-3 justify-content-between ps-2 pe-2">
+ <div class="p-1 ">
+  <div class="d-flex  mt-3 justify-content-between ps-2 pe-2">
     <div class="">
       <div>
         <h5>اخر النماذج</h5>
@@ -76,9 +76,9 @@
  </div>
   
 
-    <table class="table table-striped col-md-10  " id="table">
-      <thead >
-        <tr >
+    <table class="table  col-md-10  mt-3 " id="table">
+      <thead class="">
+        <tr class="table-active">
           
           <th class="text-center col-3">عنوان النموذج</th>
           <th class=" col-3 text-center" >المالك</th>
@@ -87,8 +87,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let item of table">
-          <td>
+        <tr  *ngFor="let item of table">
+          <td >
             <div class="d-flex m-0 p-0">
               <div class="Square "></div>
               <span class="me-1 mt-1 text-center">{{item.Name}}</span>
@@ -103,7 +103,7 @@
         </td>
           <td class="text-center">
             <div>
-              <button class="btn btn-danger border-0 ps-2 pe-2 p-0 bg-info">{{item.Category}}</button>
+              <span class="text-dark" [ngClass]="getBadgeClass(item.Category)">{{item.Category}}</span>
             </div>
           </td>
           <td></td>
@@ -111,7 +111,7 @@
         </tr>
       </tbody>
     </table>
-  <div class="d-flex flex-wrap ">
+  <div class="d-flex flex-wrap ms-1">
     <div class="controlgab col-md-3 bg-light rounded pt-3 ps-3 pe-3 d-none "  name="iconsTest" *ngFor="let item of table">
       <div class="d-flex" >
         <div class="Square2 p-3 bg-danger">
@@ -120,7 +120,7 @@
         <div class="me-1  "> 
           <h6 class="m-0  " >{{item.Name}}</h6>
           <p class="m-0">{{item.date}}</p>
-          <span class="m-0 btn btn-info pt-0 pb-0 ps-2 pe-2">{{item.Category}}</span>
+          <span class="text-dark" [ngClass]="getBadgeClass(item.Category)">{{item.Category}}</span>
           
         </div>
       </div>

@@ -1,6 +1,13 @@
+
+* {
+    margin: 0px;
+}
+
+
+
 .search{
-    bottom: 17px;
-     right: 7px;
+    bottom: 14px;
+     right: 30px;
  }
  .circle{
      width: 40px !important;
